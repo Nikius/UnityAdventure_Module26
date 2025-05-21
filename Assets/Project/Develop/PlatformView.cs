@@ -1,16 +1,17 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Project.Develop
 {
-    public class PlatformView
+    public class PlatformView: MonoBehaviour
     {
         private readonly int _isFallingKey = Animator.StringToHash("IsFalling");
         
-        private readonly Animator _animator;
+        private Animator _animator;
 
-        public PlatformView(Animator animator)
+        private void Awake()
         {
-            _animator = animator;
+            _animator = GetComponent<Animator>();
         }
 
         public void OnFall()

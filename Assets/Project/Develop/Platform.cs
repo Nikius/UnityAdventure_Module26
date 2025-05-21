@@ -9,16 +9,9 @@ namespace Project.Develop
         
         [SerializeField] private TouchingChecker _touchingChecker;
         [SerializeField] private float _timeToFall;
-        [SerializeField] private Animator _animator;
-
-        private PlatformView _view;
+        [SerializeField] private PlatformView _platformView;
         
         private bool _isActivated;
-
-        private void Awake()
-        {
-            _view = new PlatformView(_animator);
-        }
 
         private void Update()
         {
@@ -36,7 +29,7 @@ namespace Project.Develop
         {
             yield return new WaitForSeconds(_timeToFall);
             
-            _view.OnFall();
+            _platformView.OnFall();
             
             Destroy(gameObject, TimeToDestroy);
         }

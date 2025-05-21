@@ -15517,6 +15517,23 @@ Transform:
   - {fileID: 1649071465}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1572101546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8873378599504176733, guid: 0247ab57a0a1717448527f8373460d0a, type: 3}
+  m_PrefabInstance: {fileID: 7155186705502873140}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1572101548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572101546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c5d3d4d99f54f48ae5d3d1cff3c9848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1638327491
 GameObject:
   m_ObjectHideFlags: 0
@@ -16215,6 +16232,10 @@ PrefabInstance:
       propertyPath: _timeToFall
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1865551193644987714, guid: 0247ab57a0a1717448527f8373460d0a, type: 3}
+      propertyPath: _platformView
+      value: 
+      objectReference: {fileID: 1572101548}
     - target: {fileID: 2024478629228755081, guid: 0247ab57a0a1717448527f8373460d0a, type: 3}
       propertyPath: m_Name
       value: TouchingChecker
@@ -16286,7 +16307,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8873378599504176733, guid: 0247ab57a0a1717448527f8373460d0a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1572101548}
   m_SourcePrefab: {fileID: 100100000, guid: 0247ab57a0a1717448527f8373460d0a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
